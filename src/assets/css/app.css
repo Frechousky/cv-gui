@@ -1,0 +1,117 @@
+.capitalize {
+    text-transform: capitalize;
+}
+
+/**** EDUCATION ****/
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.education-item-period {
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+.education-item-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+/**** FULLNAME ****/
+.fullname {
+    font-size: 30px;
+}
+
+
+/**** JOB TITLE ****/
+.job-title {
+    color: grey;
+    font-size: 20px;
+}
+
+
+/**** HEADER *****/
+.header {
+    padding-bottom: 3rem;
+}
+
+
+/**** LEFT PANNEL ****/
+.left-panel-block {
+    padding-bottom: 1.5rem;
+}
+
+.left-panel-block-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+
+/**** PROFILE PICTURE ****/
+.profile-picture {
+    width: 175px;
+}
+
+
+/**** PROJECT ****/
+.project-item {
+    margin-bottom: 2rem;
+}
+
+.project-item-description {
+    text-align: justify;
+}
+
+.project-item-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-item-year {
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+/**** RIGHT PANNEL ****/
+.right-panel-block {
+    margin-bottom: 2rem;
+}
+
+.right-panel-block-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.right-panel-block-title-icon {
+    margin-right: 1.5rem;
+}
+
+.right-panel-inner-block {
+    border-left-color: grey;
+    border-left-style: solid;
+    border-left-width: 1.5px;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 2.5rem;
+}
+
+/**** WORK EXPERIENCES ****/
+.work-experience-item {
+    margin-bottom: 2rem;
+}
+
+.work-experience-item-description {
+    text-align: justify;
+}
+
+.work-experience-item-period {
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+.work-experience-item-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
