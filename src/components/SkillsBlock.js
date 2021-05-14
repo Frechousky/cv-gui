@@ -5,7 +5,7 @@ import LeftPanelBlock from './LeftPanelBlock';
 export default class SkillsBlock extends LeftPanelBlock {
     constructor(props) {
         super(props);
-        this.title = "Compétences";
+        this.title = "Skills";
     };
 
     // overload

@@ -6,7 +6,7 @@ export default class WorkExperiencesBlock extends RightPanelBlock {
     constructor(props) {
         super(props);
         this.icon = "fas fa-briefcase fa-lg";
-        this.title = "Expériences professionnelles";
+        this.title = "Work Experiences";
     };
 
     // overload

@@ -5,7 +5,7 @@ import LeftPanelBlock from './LeftPanelBlock';
 export default class EducationBlock extends LeftPanelBlock {
     constructor(props) {
         super(props);
-        this.title = "Formations";
+        this.title = "Educational Background";
     };
 
     // overload

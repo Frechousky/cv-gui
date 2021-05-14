@@ -6,7 +6,7 @@ import { SkillItem } from './SkillsBlock';
 export default class LanguagesBlock extends LeftPanelBlock {
     constructor(props) {
         super(props);
-        this.title = "Langues";
+        this.title = "Languages";
     };
     
     // overload

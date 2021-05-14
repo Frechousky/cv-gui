@@ -6,7 +6,7 @@ import LeftPanelBlock from './LeftPanelBlock';
 export default class ContactDetailsBlock extends LeftPanelBlock {
     constructor(props) {
         super(props);
-        this.title = "Coordonnées";
+        this.title = "Contact Information";
         this.mailAttributes = {
             "href": "mailto:" + this.props.contactInformation.mail
         };
