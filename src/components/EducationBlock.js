@@ -27,7 +27,7 @@ function EducationItem(props) {
         <div className="row education-item">
             <div className="col-12 education-item-title">
                 <a {...urlAttributes}>{props.education.degree}<br/>
-                Spécialité {props.education.specialization}</a>
+                Specialization {props.education.specialization}</a>
             </div>
             <div className="col-12 education-item-school">
                 {props.education.school} ({props.education.city})

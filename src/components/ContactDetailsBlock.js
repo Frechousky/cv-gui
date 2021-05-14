@@ -24,7 +24,7 @@ export default class ContactDetailsBlock extends LeftPanelBlock {
                 <li>{this.props.contactInformation.zipCode} {this.props.contactInformation.city}</li>
                 <li><a {...this.mailAttributes}>{this.props.contactInformation.mail}</a></li>
                 <li><a {...this.phoneAttributes}>{this.props.contactInformation.phone}</a></li>
-                <li>{nbYears} ans ({this.props.contactInformation.driverLicence})</li>
+                <li>{nbYears} years ({this.props.contactInformation.driverLicence})</li>
             </ul>
         );
     };
