@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { capitalize, trim } from 'underscore.string';
 
 import LeftPanelBlock from './LeftPanelBlock';
 
@@ -10,7 +12,8 @@ export default class SkillsBlock extends LeftPanelBlock {
 
     // overload
     renderInnerBlock() {
-        var skillList = this.props.skills.map((skill, i) => <SkillItem key={i} skill={skill} />);
+        console.log('SkillsBlock.props:', this.props);
+        var skillList = this.props.skills.map((skill, i) => <SkillItem key={i} skill={skill} displayIcon={true} />);
         return (
             <div className="col-12">
                 {skillList}
@@ -20,11 +23,12 @@ export default class SkillsBlock extends LeftPanelBlock {
 };
 
 export function SkillItem(props) {
-    var label = (props.skill.icon !== undefined) ? "" : props.skill.label;
+    var faIcon = props.displayIcon ? trim(props.skill.label).toLowerCase() : null;
+    faIcon = faIcon === 'javascript' ? 'js' : faIcon;
     return (
         <div className="row">
             <div className="col-12">
-                {label}<i className={props.skill.icon}/>
+                {props.displayIcon ? <FontAwesomeIcon icon={['fab', faIcon]} size='2x' /> : capitalize(props.skill.label)}
             </div>
             <div className="col-12" style={{paddingBottom: "1rem"}}>
                 <SkillLevel level={props.skill.level} />
@@ -56,18 +60,18 @@ function SkillLevel(props) {
 
 function SkillFullStar(props) {
     return (
-        <i className="fa fa-star"></i>
+        <FontAwesomeIcon icon={['fas', 'star']} />
     );
 };
 
 function SkillHalfStar(props) {
     return (
-        <i className="fas fa-star-half-alt"></i>
+        <FontAwesomeIcon icon={['fas', 'star-half-alt']} />
     );
 };
 
 function SkillEmptyStar(props) {
     return (
-        <i className="far fa-star"></i>
+        <FontAwesomeIcon icon={['far', 'star']} />
     );
 };

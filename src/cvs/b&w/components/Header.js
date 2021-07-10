@@ -1,4 +1,5 @@
 import React from 'react';
+import { capitalize, titleize } from 'underscore.string';
 
 import profilePictureSrc from '../assets/img/profilePicture.jpg';
 
@@ -10,10 +11,10 @@ export default function Header(props) {
                     <ProfilePicture src={profilePictureSrc} />
                 </div>
                 <div className="col-12 fullname">
-                    {props.data.contactInformation.firstName} {props.data.contactInformation.lastName}
+                    {capitalize(props.data.contactInformation.firstName)} {capitalize(props.data.contactInformation.lastName)}
                 </div>
                 <div className="col-12 job-title">
-                    {props.data.jobTitle}
+                    {titleize(props.data.jobTitle)}
                 </div>
             </div>
         </header>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { capitalize } from 'underscore.string';
 
 import LeftPanelBlock from './LeftPanelBlock';
 
@@ -22,8 +23,8 @@ export default class HobbiesBlock extends LeftPanelBlock {
 function HobbyItem(props) {
     return (
         <div className="row">
-            <div className="col-12 hobby-item capitalize">
-                {props.hobby}
+            <div className="col-12 hobby-item">
+                {capitalize(props.hobby)}
             </div>
         </div>
     );

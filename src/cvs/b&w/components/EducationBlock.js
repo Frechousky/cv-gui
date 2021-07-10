@@ -1,4 +1,5 @@
 import React from 'react';
+import { titleize } from 'underscore.string';
 
 import LeftPanelBlock from './LeftPanelBlock';
 
@@ -26,11 +27,11 @@ function EducationItem(props) {
     return (
         <div className="row education-item">
             <div className="col-12 education-item-title">
-                <a {...urlAttributes}>{props.education.degree}<br/>
-                Specialization {props.education.specialization}</a>
+                <a {...urlAttributes}>{titleize(props.education.degree)} in {titleize(props.education.field)}<br/>
+                specialization {titleize(props.education.specialization)}</a>
             </div>
             <div className="col-12 education-item-school">
-                {props.education.school} ({props.education.city})
+                {titleize(props.education.school)} ({titleize(props.education.city)})
             </div>
             <div className="col-12 education-item-period">
                 {props.education.start} - {props.education.end}

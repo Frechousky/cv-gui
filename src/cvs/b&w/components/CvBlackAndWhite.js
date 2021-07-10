@@ -4,7 +4,9 @@ import Header from './Header';
 import LeftPanel from './LeftPanel';
 import RightPanel from './RightPanel';
 
-export default function App(props) {
+import '../assets/css/app.css';
+
+export default function CvBlackAndWhite(props) {
     return (
         <div className="container">
             <div className="row">

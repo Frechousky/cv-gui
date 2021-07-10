@@ -1,4 +1,5 @@
 import React from 'react';
+import { capitalize, titleize } from 'underscore.string';
 
 import RightPanelBlock from './RightPanelBlock';
 
@@ -22,14 +23,14 @@ export default class ProjectsBlock extends RightPanelBlock {
 
 function ProjectItem(props) {
     var descriptionList = props.project.description.map(
-        (descriptionItem, i) => <li key={i}>{descriptionItem}</li>);
+        (descriptionItem, i) => <li key={i}>{capitalize(descriptionItem)}</li>);
     var urlAttributes = {
         "href": props.project.url,
     }
     return (
         <div className="row project-item">
             <div className="col-12 project-item-title">
-                <a {...urlAttributes}>{props.project.title}</a>
+                <a {...urlAttributes}>{titleize(props.project.title)}</a>
             </div>
             <div className="col-12 project-item-year">
                 {props.project.year}

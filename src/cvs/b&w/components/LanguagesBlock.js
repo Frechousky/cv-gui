@@ -1,7 +1,7 @@
 import React from 'react';
 
 import LeftPanelBlock from './LeftPanelBlock';
-import { SkillItem } from './SkillsBlock';
+import { SkillItem } from './SkillsBlock';
 
 export default class LanguagesBlock extends LeftPanelBlock {
     constructor(props) {
@@ -11,7 +11,7 @@ export default class LanguagesBlock extends LeftPanelBlock {
     
     // overload
     renderInnerBlock() {
-        var languageList = this.props.languages.map((language, i) => <SkillItem key={i} skill={language} />);
+        var languageList = this.props.languages.map((language, i) => <SkillItem key={i} skill={language} displayIcon={false} />);
         return (
             <div className="col-12">
                 {languageList}

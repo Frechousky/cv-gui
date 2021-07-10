@@ -1,4 +1,5 @@
 import React from 'react';
+import { capitalize, titleize } from 'underscore.string';
 
 import RightPanelBlock from './RightPanelBlock';
 
@@ -6,7 +7,7 @@ export default class WorkExperiencesBlock extends RightPanelBlock {
     constructor(props) {
         super(props);
         this.icon = "fas fa-briefcase fa-lg";
-        this.title = "Expériences professionnelles";
+        this.title = "Work Experiences";
     };
 
     // overload
@@ -23,11 +24,11 @@ export default class WorkExperiencesBlock extends RightPanelBlock {
 
 function WorkExperienceItem(props) {
     var descriptionList = props.workExperience.description.map(
-        (descriptionItem, i) => <li key={i}>{descriptionItem}</li>);
+        (descriptionItem, i) => <li key={i}>{capitalize(descriptionItem)}</li>);
     return (
         <div className="row work-experience-item">
             <div className="col-12 work-experience-item-title">
-                {props.workExperience.position} - {props.workExperience.company.name} ({props.workExperience.company.field}) - {props.workExperience.company.city} ({props.workExperience.company.country})
+                {titleize(props.workExperience.position)} - {titleize(props.workExperience.company.name)} ({titleize(props.workExperience.company.field)}) - {titleize(props.workExperience.company.city)} ({titleize(props.workExperience.company.country)})
             </div>
             <div className="col-12 work-experience-item-period">
                 {props.workExperience.start} - {props.workExperience.end}
