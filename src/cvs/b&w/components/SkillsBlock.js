@@ -12,7 +12,6 @@ export default class SkillsBlock extends LeftPanelBlock {
 
     // overload
     renderInnerBlock() {
-        console.log('SkillsBlock.props:', this.props);
         var skillList = this.props.skills.map((skill, i) => <SkillItem key={i} skill={skill} displayIcon={true} />);
         return (
             <div className="col-12">

@@ -40,7 +40,6 @@ export default function App(props) {
         (async () => {
             try {
                 var cvData = await getCv('http://localhost/cvs/1');
-                console.log('cvData:', cvData);
                 setState({...state, cvData: cvData, cvDataLoading: false});
             } catch (err) {
                 setState({...state, errorLoadingCvData: true});
