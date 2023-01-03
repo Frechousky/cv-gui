@@ -4,7 +4,7 @@ import Header from './Header';
 import LeftPanel from './LeftPanel';
 import RightPanel from './RightPanel';
 
-import '../assets/css/app.css';
+import '../assets/css/black_and_white.css';
 
 export default function CvBlackAndWhite(props) {
   return (
