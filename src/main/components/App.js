@@ -22,8 +22,6 @@ library.add(far, fas, fab);
 
 const CVs = [
     { label: 'Black & White', component: CvBlackAndWhite },
-    { label: 'Black & White', component: CvBlackAndWhite },
-    { label: 'Black & White', component: CvBlackAndWhite },
 ];
 
 export default function App(props) {
