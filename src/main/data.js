@@ -60,7 +60,7 @@ export const cvData = {
         start: "2016",
         end: "2017",
         city: "tours",
-        description: ["description 1", "description 2", "description 3"],
+        description: [],
     }, {
         degree: "MASTER",
         field: "mathematics and electronics",
@@ -70,7 +70,7 @@ export const cvData = {
         start: "2013",
         end: "2015",
         city: "bordeaux",
-        description: ["description 1", "description 2", "description 3"],
+        description: [],
     }, {
         degree: "BACHELOR",
         field: "applied mathematics",
@@ -80,7 +80,7 @@ export const cvData = {
         start: "2009",
         end: "2013",
         city: "bordeaux",
-        description: ["description 1", "description 2", "description 3"],
+        description: [],
     }],
 
     workExperiences: [
