@@ -13,8 +13,7 @@ import LoadingAnimation from './LoadingAnimation';
 // CVs
 import CvBlackAndWhite from '../../cvs/b&w/components/CvBlackAndWhite';
 
-import '../assets/bootstrap-5.0.2-dist/css/bootstrap.min.css';
-import '../assets/bootstrap-5.0.2-dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Add font-awesome icons
 library.add(far, fas, fab);
@@ -56,5 +55,3 @@ export default function App(props) {
     </div>
   );
 };
-
-App.propType;
