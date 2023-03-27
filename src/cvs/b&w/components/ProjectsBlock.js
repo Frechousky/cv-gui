@@ -6,7 +6,6 @@ import RightPanelBlock from './RightPanelBlock';
 export default class ProjectsBlock extends RightPanelBlock {
   constructor(props) {
     super(props);
-    this.icon = 'fas fa-screwdriver fa-lg';
     this.title = 'Projects';
   };
 

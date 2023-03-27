@@ -2,10 +2,11 @@ import React from 'react';
 
 export default class RightPanelBlock extends React.Component {
   render() {
-    const title = (typeof this.title !== 'undefined') ? <RightPanelBlockTitle icon={this.icon} label={this.title} /> : '';
     return (
       <div className="right-panel-block">
-        {title}
+        <div className="right-panel-block-title">
+          {this.title}
+        </div>
         <div className="right-panel-inner-block">
           {this.renderInnerBlock()}
         </div>
@@ -16,13 +17,4 @@ export default class RightPanelBlock extends React.Component {
   renderInnerBlock() {
     throw Error('renderInnerBlock must be overloaded !');
   };
-}
-
-function RightPanelBlockTitle(props) {
-  const icon = (typeof props.icon !== 'undefined') ? <i className={props.icon} /> : '';
-  return (
-    <div className="right-panel-block-title">
-      <span className="right-panel-block-title-icon">{icon}</span>{props.label}
-    </div>
-  );
 };

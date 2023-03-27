@@ -1,11 +1,5 @@
 import React, {useState} from 'react';
 
-// Fontawesome
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {far} from '@fortawesome/free-regular-svg-icons';
-import {fas} from '@fortawesome/free-solid-svg-icons';
-import {fab} from '@fortawesome/free-brands-svg-icons';
-
 // App components
 import Header from './Header';
 import LoadingAnimation from './LoadingAnimation';
@@ -14,9 +8,6 @@ import LoadingAnimation from './LoadingAnimation';
 import CvBlackAndWhite from '../../cvs/b&w/components/CvBlackAndWhite';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// Add font-awesome icons
-library.add(far, fas, fab);
 
 const CVs = [
   {label: 'Black & White', component: CvBlackAndWhite},
