@@ -1,8 +1,8 @@
 export const cvData = {
 
-  jobTitle: 'fullstack software engineer',
-  hobbies: ['Playing badminton', 'Riding my bike', 'Watching a good movie'],
+  jobTitle: 'software engineer',
   bio: 'software engineer with 5 years experience in Banking, Maritime and Aeronautic fields.',
+  hobbies: ['playing badminton', 'riding my bike'],
 
   contact: {
     firstName: 'alexandre',
@@ -17,18 +17,17 @@ export const cvData = {
     linkedin: 'https://fr.linkedin.com/in/alexandre-fr%C3%A8che-270071114',
     github: 'https://github.com/Frechousky/',
     dateOfBirth: '21/03/1991',
-    driverLicence: 'driver license b',
   },
 
   languages: [{
     label: 'english',
-    level: 4.0,
+    level: 'advanced',
   }, {
     label: 'french',
-    level: 5.0,
+    level: 'native',
   }, {
     label: 'spanish',
-    level: 2.0,
+    level: 'beginner',
   }],
 
   projects: [{
@@ -41,19 +40,15 @@ export const cvData = {
 
   skills: [{
     label: 'Java',
-    level: 4,
+  },
+  {
+    label: 'Spring',
   }, {
-    label: 'python',
-    level: 3.5,
+    label: 'Python',
   }, {
-    label: 'php',
-    level: 3.5,
+    label: 'C',
   }, {
     label: 'Javascript',
-    level: 3.5,
-  }, {
-    label: 'react',
-    level: 3.0,
   }],
 
   studies: [{
@@ -93,35 +88,16 @@ export const cvData = {
       position: 'fullstack software engineer',
       company: {
         name: 'viveris technologies',
-        field: 'software engineering',
+        field: 'aeronautic, maritime and space',
         country: 'france',
         city: 'toulouse',
       },
-      description: [[
-        'aeronautic application maintenance and update',
-        'update an ARINC 665 file generator to be compatible with ARINC 665-3 standard',
-        'read standard documentation',
-        'bug fixes',
-        'stack: Java, Swing',
-      ],
-      ['maritime application update',
-        'add password security check (check that password contains digits, lowercase/uppercase/special characters) during user accounts creation/update',
-        'stack: Java, PHP, Javascript, Oracle, Maven, Jenkins',
-      ], [
-        'maritime security application maintenance',
-        'exchange with clients through JIRA',
-        'analyse logs from clients prod/integration application',
-        'implement and test bug fix',
-        'stack: Java, Spring, Javascript, Oracle, Maven, Jenkins ',
-        'legacy code removal from a maritime application',
-        'remove obsolete code before revamping a 10+ year app',
-        'stack: Java, Php, Oracle, Maven, Jenkins',
-      ],
-      'maritime firewall server revamp',
-      'add REST APIs to monitor loaded firewalls',
-      'revamp firewall data structures/API/loading mechanism',
-      'reading of C libraries documentation and source code',
-      'stack: C (libiptc, libipset, libmicrohttpd), multithreading, Jenkins',
+      description: [
+        'fix and improve an aeronautic app according to aircraft industry\'s standards (stack: Java, C)',
+        'add password complexity checking and encryption to a maritime app (stack: Java, Spring, PHP, Javascript)',
+        'revamp SOAP API into REST API (both client and server) (stack: Java, Springboot, Python)',
+        'maintenance and exchange with customer through a ticketing app for a maritime security app (stack: Java, Spring, Javascript, Maven, Jenkins)',
+        'revamp and improvement of a firewall API from a maritime app (stack: C, libiptc, libipset, libmicrohttpd, Jenkins)',
       ],
       start: '06/2020',
       end: '10/2022',
@@ -134,11 +110,9 @@ export const cvData = {
         city: 'toulouse',
       },
       description: [
-        'maintenance of a credit card management app',
-        'security improvements after internal security audit (XSS, SQLI, CVE)',
+        'update and maintenance a credit card management app',
+        'improve security (XSS, SQLI, CVE)',
         'exchange with clients through homemade ticketing application',
-        'analyse logs from clients production / integration application',
-        'implement and test bug fixes',
         'stack: Java (1.3/1.6), JSP, Javascript',
       ],
       start: '06/2019',
@@ -152,11 +126,10 @@ export const cvData = {
         city: 'tours',
       },
       description: [
-        'web banking app update and maintenance',
-        'security improvements after internal security audit (XSS, SQLI, CVE)',
+        'update and maintenance of a web banking app',
+        'improve security (XSS, SQLI, CVE)',
         'implement and test new functionnalities based on specifications',
         'exchange with clients through homemade ticketing application',
-        'implement and test bug fixes',
         'stack: Java 8, JSP, Javascript, Bootstrap, Maven, Jenkins',
       ],
       start: '09/2017',
@@ -170,9 +143,7 @@ export const cvData = {
         city: 'tours',
       },
       description: [
-        'web banking app GUI revamp',
-        'add bootstrap to a web banking application',
-        'revamp 50+ GUIs in a SCRUM environment',
+        'revamp of 50+ GUIs in a SCRUM environment',
         'implement and test new functionnalities (back + front)',
         'stack: Java 8, JSP, Javascript, Bootstrap, Maven, Jenkins',
       ],
