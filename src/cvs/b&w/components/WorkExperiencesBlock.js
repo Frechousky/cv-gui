@@ -28,7 +28,8 @@ function WorkExperienceItem(props) {
   return (
     <div className="row work-experience-item">
       <div className="col-12 work-experience-item-title">
-        {titleize(props.workExperience.position)}<br/>{titleize(props.workExperience.company.name)} ({titleize(props.workExperience.company.field)})<br/>{titleize(props.workExperience.company.city)} ({titleize(props.workExperience.company.country)})
+        {titleize(props.workExperience.position)} @ {titleize(props.workExperience.company.name)} ({titleize(props.workExperience.company.field)})<br/>
+        {titleize(props.workExperience.company.city)}, {titleize(props.workExperience.company.country)}
       </div>
       <div className="col-12 work-experience-item-period">
         {props.workExperience.start} - {props.workExperience.end}
