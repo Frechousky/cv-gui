@@ -47,7 +47,7 @@ export default function App(props) {
   return (
     <div className='row'>
       <div className='col-12'>
-        <Header cvs={CVs} selectedCv={state.selectedCv} onClickCvLink={onClickCvLink} disabled={state.cvGuiLoading || state.cvDataLoading} />
+        <Header cvs={CVs} selectedCv={state.selectedCv} onClickCvLink={onClickCvLink} disabled={state.cvGuiLoading} />
       </div>
       <div className='col-12' style={{marginTop: '2rem'}}>
         {state.cvGuiLoading ? <LoadingAnimation /> : generateSelectedCvHtml()}
