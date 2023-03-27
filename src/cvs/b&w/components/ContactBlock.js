@@ -1,9 +1,10 @@
 import React from 'react';
 import moment from 'moment';
-
+import {capitalize} from 'underscore.string';
 import LeftPanelBlock from './LeftPanelBlock';
 
-export default class ContactDetailsBlock extends LeftPanelBlock {
+
+export default class ContactBlock extends LeftPanelBlock {
   constructor(props) {
     super(props);
     this.title = 'Contact Information';
@@ -17,17 +18,14 @@ export default class ContactDetailsBlock extends LeftPanelBlock {
 
   // overload
   renderInnerBlock() {
-    const nbYears =
-      moment(this.props.contact.dateOfBirth, 'dd/MM/yyyy')
-          .fromNow(true).split(' ')[0];
+    const nbYears = moment(this.props.contact.dateOfBirth, 'dd/MM/yyyy').fromNow(true).split(' ')[0];
     return (
       <ul className="list-unstyled">
-        <li>{this.props.contact.address}</li>
-        <li>{this.props.contact.zipCode} {this.props.contact.city}</li>
         <li><a {...this.mailAttributes}>{this.props.contact.mail}</a></li>
         <li><a {...this.phoneAttributes}>{this.props.contact.phone}</a></li>
-        <li>{nbYears} years ({this.props.contact.driverLicence})</li>
+        <li>{this.props.contact.address}, {this.props.contact.zipCode} {capitalize(this.props.contact.city)} ({capitalize(this.props.contact.country)})</li>
+        <li>{nbYears} years</li>
       </ul>
     );
   };
-};
+}
