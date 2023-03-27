@@ -21,7 +21,13 @@ export default class LeftPanelBlock extends React.Component {
 function LeftPanelBlockTitle(props) {
   return (
     <div className="left-panel-block-title">
-      <img src={diamondPng} alt=""/>&nbsp;&nbsp;&nbsp;{props.label}&nbsp;&nbsp;&nbsp;<img src={diamondPng} alt="" />
+      <Diamond />&nbsp;&nbsp;&nbsp;{props.label}&nbsp;&nbsp;&nbsp;<Diamond />
     </div>
   );
 };
+
+function Diamond() {
+  return (
+    <img src={diamondPng} alt="diamond" style={{verticalAlign: 'baseline'}}/>
+  );
+}
