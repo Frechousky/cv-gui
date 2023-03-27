@@ -1,7 +1,7 @@
 import React from 'react';
+import {capitalize} from 'underscore.string';
 
 import LeftPanelBlock from './LeftPanelBlock';
-import {SkillItem} from './SkillsBlock';
 
 export default class LanguagesBlock extends LeftPanelBlock {
   constructor(props) {
@@ -11,10 +11,12 @@ export default class LanguagesBlock extends LeftPanelBlock {
 
   // overload
   renderInnerBlock() {
-    const languageList = this.props.languages.map((language, i) => <SkillItem key={i} skill={language} displayIcon={false} />);
+    const languages = this.props.languages
+        .map((e) => `${capitalize(e.label)} (${e.level})`)
+        .join(', ');
     return (
       <div className="col-12">
-        {languageList}
+        {languages}
       </div>
     );
   };
