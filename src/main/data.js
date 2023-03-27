@@ -2,15 +2,20 @@ export const cvData = {
 
   jobTitle: 'fullstack software engineer',
   hobbies: ['Playing badminton', 'Riding my bike', 'Watching a good movie'],
+  bio: 'software engineer with 5 years experience in Banking, Maritime and Aeronautic fields.',
 
   contact: {
     firstName: 'alexandre',
     lastName: 'frèche',
     address: '49 route du pesquité',
     city: 'azur',
+    country: 'france',
+    department: '40',
     zipCode: '40140',
     phone: '(+33)608963234',
     mail: 'alexandre.freche@gmail.com',
+    linkedin: 'https://fr.linkedin.com/in/alexandre-fr%C3%A8che-270071114',
+    github: 'https://github.com/Frechousky/',
     dateOfBirth: '21/03/1991',
     driverLicence: 'driver license b',
   },
