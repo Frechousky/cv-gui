@@ -105,14 +105,14 @@ export const cvData = {
       position: 'junior fullstack software engineer',
       company: {
         name: 'sopra banking software',
-        field: 'banking software',
+        field: 'banking',
         country: 'france',
         city: 'toulouse',
       },
       description: [
         'update and maintenance a credit card management app',
         'improve security (XSS, SQLI, CVE)',
-        'exchange with clients through homemade ticketing application',
+        'exchange with clients through ticketing application',
         'stack: Java (1.3/1.6), JSP, Javascript',
       ],
       start: '06/2019',
@@ -121,7 +121,7 @@ export const cvData = {
       position: 'junior fullstack software engineer',
       company: {
         name: 'sopra banking software',
-        field: 'banking software',
+        field: 'banking',
         country: 'france',
         city: 'tours',
       },
@@ -129,7 +129,7 @@ export const cvData = {
         'update and maintenance of a web banking app',
         'improve security (XSS, SQLI, CVE)',
         'implement and test new functionnalities based on specifications',
-        'exchange with clients through homemade ticketing application',
+        'exchange with clients through ticketing application',
         'stack: Java 8, JSP, Javascript, Bootstrap, Maven, Jenkins',
       ],
       start: '09/2017',
@@ -138,7 +138,7 @@ export const cvData = {
       position: 'fullstack software engineer intern',
       company: {
         name: 'sopra banking software',
-        field: 'banking software',
+        field: 'banking',
         country: 'france',
         city: 'tours',
       },
