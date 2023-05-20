@@ -1,19 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import Header from './Header';
-import LeftPanel from './LeftPanel';
-import RightPanel from './RightPanel';
+import Header from './Header'
+import LeftPanel from './LeftPanel'
+import RightPanel from './RightPanel'
 
-import '../assets/css/black_and_white.css';
+import '../assets/css/black_and_white.css'
 
-export default function CvBlackAndWhite(props) {
+export default function CvBlackAndWhite (props) {
   return (
-    <div className="container">
-      <div className="row">
+    <div className='container'>
+      <div className='row'>
         <Header data={props.data} />
         <LeftPanel data={props.data} />
         <RightPanel data={props.data} />
       </div>
     </div>
-  );
-};
+  )
+}
