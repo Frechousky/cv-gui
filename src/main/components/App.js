@@ -10,10 +10,7 @@ import CvMinimalist from '../../cvs/minimalist/components/CvMinimalist'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const CVs = [
-  { label: 'Minimalist', component: CvMinimalist },
-  { label: 'Black & White', component: CvBlackAndWhite }
-]
+const CVs = [{ label: 'Black & White', component: CvBlackAndWhite }]
 
 export default function App (props) {
   const [state, setState] = useState({
